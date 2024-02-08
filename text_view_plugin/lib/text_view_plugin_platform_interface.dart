@@ -23,7 +23,7 @@ abstract class TextViewPluginPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<String?> setText(String text) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

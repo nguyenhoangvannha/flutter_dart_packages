@@ -1,8 +1,10 @@
 
 import 'text_view_plugin_platform_interface.dart';
 
+export 'text_view_hybrid_composition.dart';
+
 class TextViewPlugin {
-  Future<String?> getPlatformVersion() {
-    return TextViewPluginPlatform.instance.getPlatformVersion();
+  Future<String?> setText(String text) {
+    return TextViewPluginPlatform.instance.setText(text);
   }
 }

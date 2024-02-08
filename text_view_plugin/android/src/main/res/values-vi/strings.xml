@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rendered_on_a_native_android_view_id">Được vẽ trên một native Android view (id: %1$s)</string>
+</resources>

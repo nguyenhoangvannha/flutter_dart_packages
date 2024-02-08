@@ -19,7 +19,7 @@ class TextViewPluginWeb extends TextViewPluginPlatform {
 
   /// Returns a [String] containing the version of the platform.
   @override
-  Future<String?> getPlatformVersion() async {
+  Future<String?> setText(String text) async {
     final version = html.window.navigator.userAgent;
     return version;
   }
