@@ -29,7 +29,7 @@ internal class TextViewNativeView(
         textView.textSize = 14f
         textView.setBackgroundColor(Color.rgb(255, 255, 255))
         textView.text =
-            context.getString(R.string.rendered_on_a_native_android_view_id) + (creationParams?.get(
+            context.getString(R.string.rendered_on_a_native_android_view_id, id) + (creationParams?.get(
                 "initialText"
             ) ?: "")
         channel.setMethodCallHandler(this)

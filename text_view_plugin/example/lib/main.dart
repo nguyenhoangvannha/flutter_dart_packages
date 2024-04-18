@@ -28,15 +28,27 @@ class _MyAppState extends State<MyApp> {
             mainAxisSize: MainAxisSize.min,
             children: [
               const SizedBox(
-                  height: 30,
+                  height: 60,
                   child: NativeTextViewHybridComposition(
+                    initialText: 'Hello world NativeTextViewHybridComposition',
+                  )),
+              ElevatedButton(
+                  onPressed: () {
+                    _textViewPlugin.setText("Goodbye world NativeTextViewHybridComposition");
+                  },
+                  child: const Text(
+                      "Set text Goodbye world to NativeTextViewHybridComposition")),
+              const SizedBox(
+                  height: 60,
+                  child: NativeTextViewVirtualDisplay(
                     initialText: 'Hello world',
                   )),
               ElevatedButton(
                   onPressed: () {
-                    _textViewPlugin.setText("Goodbye world");
+                    _textViewPlugin.setText("Goodbye world NativeTextViewVirtualDisplay");
                   },
-                  child: Text("Set text Goodbye world")),
+                  child: const Text(
+                      "Set text Goodbye world to NativeTextViewVirtualDisplay")),
             ],
           ),
         ),
