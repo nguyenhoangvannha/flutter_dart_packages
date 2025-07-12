@@ -7,7 +7,7 @@ repository: https://github.com/nguyenhoangvannha/flutter_dart_packages/tree/main
 resolution: workspace
 
 environment:
-  sdk: '>=3.6.0'
+  sdk: ^3.6.0
   flutter: ">=1.17.0"
 
 dependencies:
